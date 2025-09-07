@@ -5,7 +5,7 @@ print('Levels: \neasy:1-50 \nmedium:1-100 \nhard:1-500')
 
 tries = 0
 
-level = input('Pick a level(easy, medium, hard): ')
+level = input('Pick a level(easy, medium, hard): ').lower()
 
 if level == 'easy':
     random_number = random.randint(1, 50)
@@ -48,4 +48,5 @@ elif level == 'hard':
             print('Too little! Try again!')
 else:
     print('Invalid input')
+
 
